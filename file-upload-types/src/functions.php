@@ -18,6 +18,7 @@ function fut_get_available_file_types(): array {
 			? 'file-types-list-v2'
 			: 'file-types-list';
 
+	// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
 	$mime_types_serialized = trim( file_get_contents( dirname( FILE_UPLOAD_TYPES_PLUGIN_FILE ) . '/assets/' . $file . '.json' ) );
 
 	return json_decode( $mime_types_serialized, true ) ?? [];
@@ -116,7 +117,7 @@ if ( ! function_exists( '_fut_update_file_data_description' ) ) {
 	 *
 	 * Use internally only.
 	 *
-	 * @since {VERSION}
+	 * @since 1.3.0
 	 *
 	 * @see   fut_format_raw_custom_types
 	 *
@@ -142,7 +143,7 @@ if ( ! function_exists( '_fut_update_file_data_mime' ) ) {
 	 *
 	 * Use internally only.
 	 *
-	 * @since {VERSION}
+	 * @since 1.3.0
 	 *
 	 * @see   fut_format_raw_custom_types
 	 *
@@ -167,7 +168,7 @@ if ( ! function_exists( '_fut_update_file_data_extensions' ) ) {
 	 *
 	 * Use internally only.
 	 *
-	 * @since {VERSION}
+	 * @since 1.3.0
 	 *
 	 * @see   fut_format_raw_custom_types
 	 *

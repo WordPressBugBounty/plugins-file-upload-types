@@ -1,9 +1,9 @@
 === File Upload Types by WPForms ===
-Contributors: wpforms, smub, jaredatch, slaFFik, kkarpieszuk
+Contributors: wpforms, smub, jaredatch, slaFFik, kkarpieszuk, kaggdesign
 Tags: files, upload, file upload, mime, attachments
 Requires at least: 5.5
 Tested up to: 6.6
-Stable tag: 1.4.0
+Stable tag: 1.5.0
 Requires PHP: 7.0
 License: GNU General Public License v2.0 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -81,6 +81,12 @@ Visit <a href="http://www.wpbeginner.com/?utm_source=wprepo&utm_medium=link&utm_
 1. Settings Page
 
 == Changelog ==
+
+= 1.5.0 - 2024-10-23 =
+- "Add your custom file types" link did not work before clicking on "Add file types manually" link.
+- Implemented sanitizing of SVG & HTML files.
+- Added message about allowing risky file types.
+- Some file types, even enabled, were not possible to upload using the Gutenberg editor.
 
 = 1.4.0 - 2024-07-17 =
 - New functionality to define file extension and MIME type with sample file.
